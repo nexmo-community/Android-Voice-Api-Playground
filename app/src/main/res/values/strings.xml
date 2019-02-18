@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Playground Nexmo Voice</string>
+    <string-array name="voice_names" >
+        <item>Salli</item>
+        <item>Joey</item>
+        <item>Nicole</item>
+        <item>Russell</item>
+        <item>Amy</item>
+        <item>Emma</item>
+        <item>Gwyneth</item>
+        <item>Geraint</item>
+    </string-array>
+</resources>

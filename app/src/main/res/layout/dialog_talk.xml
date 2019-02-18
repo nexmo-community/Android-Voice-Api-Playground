@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="What to say?"
+        android:minLines="3" />
+
+    <TextView
+        android:id="@+id/tvVoiceLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etText"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="24dp"
+        android:text="Voice Name : " />
+
+    <Spinner
+        android:id="@+id/spVoices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etText"
+        android:layout_toEndOf="@+id/tvVoiceLabel"
+        android:entries="@array/voice_names"
+        android:spinnerMode="dialog" />
+
+</RelativeLayout>
