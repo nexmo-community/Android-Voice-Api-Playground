@@ -57,7 +57,7 @@ After running the app:
 * When you're ready, click the Call button below to place the call. (notice: the calls will be charged on your Nexmo account credit) 
 
 
-
+![Alt Text](demo.gif)
 
 
 
