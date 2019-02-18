@@ -1,124 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="16dp"
-    tools:context=".MainActivity">
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:padding="16dp"
+                                             tools:context=".MainActivity">
 
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilFromNum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/tilToNum"
-        app:layout_constraintStart_toStartOf="@+id/tilToNum"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tilFromNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="From phone number" />
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/tilToNum"
+            app:layout_constraintStart_toStartOf="@+id/tilToNum"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:inputType="phone"
+                android:layout_height="wrap_content"
+                android:hint="From phone number"/>
     </android.support.design.widget.TextInputLayout>
 
     <android.support.design.widget.TextInputLayout
-        android:id="@+id/tilToNum"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="phone"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/tilFromNum">
-
-        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tilToNum"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="To phone number" />
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/tilFromNum">
+
+        <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone"
+                android:hint="To phone number"/>
     </android.support.design.widget.TextInputLayout>
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="start"
-        android:text="Call Actions:"
-        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-        app:layout_constraintBottom_toTopOf="@+id/btnAddTalk"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilToNum" />
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="start"
+            android:text="Call Actions:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            app:layout_constraintBottom_toTopOf="@+id/btnAddTalk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tilToNum"/>
 
     <Button
-        android:id="@+id/btnAddTalk"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_talk_24dp"
-        android:text="Talk"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toTopOf="@+id/list"
-        app:layout_constraintEnd_toStartOf="@+id/btnAddStream"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintHorizontal_chainStyle="spread"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+            android:id="@+id/btnAddTalk"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_talk_24dp"
+            android:text="Talk"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toTopOf="@+id/list"
+            app:layout_constraintEnd_toStartOf="@+id/btnAddStream"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"/>
 
     <Button
-        android:id="@+id/btnAddStream"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_stream_24dp"
-        android:text="Stream"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@+id/btnAddTalk"
-        app:layout_constraintEnd_toStartOf="@+id/btnAddInput"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAddTalk"
-        app:layout_constraintTop_toTopOf="@+id/btnAddTalk" />
+            android:id="@+id/btnAddStream"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_stream_24dp"
+            android:text="Stream"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/btnAddTalk"
+            app:layout_constraintEnd_toStartOf="@+id/btnAddInput"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnAddTalk"
+            app:layout_constraintTop_toTopOf="@+id/btnAddTalk"/>
 
 
     <Button
-        android:id="@+id/btnAddInput"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawableTop="@drawable/ic_input_24dp"
-        android:text="Input"
-        android:textAllCaps="false"
-        app:layout_constraintBottom_toBottomOf="@+id/btnAddStream"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAddStream"
-        app:layout_constraintTop_toTopOf="@+id/btnAddStream" />
+            android:id="@+id/btnAddInput"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_input_24dp"
+            android:text="Input"
+            android:textAllCaps="false"
+            app:layout_constraintBottom_toBottomOf="@+id/btnAddStream"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btnAddStream"
+            app:layout_constraintTop_toTopOf="@+id/btnAddStream"/>
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/list"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:clipToPadding="false"
-        android:paddingBottom="48dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnAddTalk" />
+            android:id="@+id/list"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clipToPadding="false"
+            android:paddingBottom="48dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnAddTalk"/>
 
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fabMakeCall"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.95"
-        app:srcCompat="@drawable/ic_call_24dp" />
+            android:id="@+id/fabMakeCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.95"
+            app:srcCompat="@drawable/ic_call_24dp"/>
 
 
 </android.support.constraint.ConstraintLayout>

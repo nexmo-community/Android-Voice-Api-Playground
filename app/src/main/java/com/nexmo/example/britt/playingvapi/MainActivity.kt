@@ -25,11 +25,13 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         lifecycle.addObserver(TextWatchersObserver(viewModel, tilToNum, tilFromNum))
 
 
+        tilFromNum.editText?.setText(viewModel.fromPhone)
+        tilToNum.editText?.setText(viewModel.toPhone)
+
         list.adapter = NccoAdapter(viewModel.actions)
         list.layoutManager = LinearLayoutManager(this)
 
         fabMakeCall.setOnClickListener(this)
-
         btnAddTalk.setOnClickListener(this)
         btnAddStream.setOnClickListener(this)
         btnAddInput.setOnClickListener(this)
@@ -92,11 +94,11 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
 
-    class CallRequestUiModel : ViewModel() {
-        lateinit var toPhone: String
-        lateinit var fromPhone: String
-        val actions = mutableListOf<NccoAction>()
-    }
+    class CallRequestUiModel(
+        var fromPhone: String = DEFAULT_CALLER,
+        var toPhone: String = DEFAULT_CALLEE,
+        var actions: MutableList<NccoAction> = mutableListOf()
+    ) : ViewModel()
 
 
 }

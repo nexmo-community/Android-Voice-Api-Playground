@@ -6,7 +6,10 @@ import retrofit2.http.Header
 import retrofit2.http.Headers
 import retrofit2.http.POST
 
-const val APP_JWT = TODO("copy your jwt here.")
+const val APP_JWT = "SAMPLE_JWT" //TODO: swap with your own. See README.md for more details
+
+const val DEFAULT_CALLEE = "" //TODO: for convenience you can insert here the phone number you'd like to call to. you can change it from the UI as well.
+const val DEFAULT_CALLER = "12345678901"
 
 interface NexmoApiService {
 

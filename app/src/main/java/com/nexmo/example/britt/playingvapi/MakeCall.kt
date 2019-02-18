@@ -9,7 +9,7 @@ import retrofit2.Response
 fun executeMakeCall(context: Context, viewModel: MainActivity.CallRequestUiModel) {
     val request = NXMRequest(
         arrayOf(PhoneNum(number = viewModel.toPhone)),
-        PhoneNum(number = viewModel.fromPhone),
+        PhoneNum(number = DEFAULT_CALLER),
         ncco = viewModel.actions
     )
 
